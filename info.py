@@ -16,3 +16,5 @@ for section in elemen.findAll('div',{'class':'tag-container field-name'}):
   for a in section.findAll('a'):
     print(f"- {a.text}")
 
+print(elemen.find(text=re.compile(r'page')))
+print(elemen.find('time').text)
